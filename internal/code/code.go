@@ -71,7 +71,7 @@ func Execute(code Block) Result {
 	language, ok := Languages[code.Language]
 	if !ok {
 		return Result{
-			Out:      "Error: unsupported language",
+			Out:      "",
 			ExitCode: ExitCodeInternalError,
 		}
 	}
